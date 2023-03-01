@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_demand_root"
+                name="Time Service"
+                sequence="0"/>
+
+    <menuitem id="menu_demand_master"
+                name="Activity Status"                
+                parent="menu_demand_root"
+                sequence="0"/> 
+    
+     <menuitem id="menu_configuration"
+                name="Configurations"
+                parent="menu_demand_root"
+                sequence="0"/>  
+    
+    <menuitem id="menu_create_activity"
+                name="Create Activity" 
+                action="event.action_event_view"
+                parent="menu_demand_master"
+                sequence="0"/>
+    
+</odoo>

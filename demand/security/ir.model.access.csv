@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.demand.creator,access_demand_creator,model_demand_creator,base.group_user,1,1,1,1
+access.demand.tag,access_demand_tag,model_demand_tag,base.group_user,1,1,1,1

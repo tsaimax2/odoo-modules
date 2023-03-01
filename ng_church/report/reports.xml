@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_tithe_report" model="report.paperformat">
+            <field name="name">A4</field>
+            <field name="default" eval="True"/>
+            <field name="format">A5</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">40</field>
+            <field name="margin_bottom">32</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">35</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <report id="pledge_report_reg"
+                name="ng_church.print_pledge_report" string="Pledge Balance"
+                model="ng_church.pledge_line"
+                file="ng_church.print_pledge_report"
+                report_type='qweb-pdf'/>
+
+        <record id="pledge_report_reg" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+    
+        <!-- <report id="action_report_pricelist"
+                name="ng_church.action_report_pricelist" string="Pledge Balance"
+                model="ng_church.pledge_line"
+                file="ng_church.action_report_pricelist"
+                report_type='qweb-pdf'/>
+ -->
+        <!-- <report id="payment_receipt_inherit_main" inherit_id="account.report_payment_receipt"
+                name="account.report_payment_receipt" string="Payment Receipt"
+                model="account.payment"
+                file="account.report_payment_receipt"
+                report_type='qweb-pdf'/> -->
+
+        <record id="account.action_report_payment_receipt" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+
+        <!-- <record id="ng_church_pledges_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+
+        <report id="ng_church_pledges_report"
+                model="ng_church.pledge"
+                string="Pledge Payments Report"
+                name="ng_church.church_pledges_report"
+                file="ng_church.church_pledges_report"
+                report_type="qweb-pdf"/>  -->
+        
+        <!-- <record id="ng_church_attendance_line_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+
+        <report id="ng_church_attendance_line_report"
+                model="ng_church.attendance"
+                string="Church Services Attendance"
+                name="ng_church.church_attendance_report"
+                file="ng_church.church_attendance_report"
+                report_type="qweb-pdf"/> -->
+        
+                
+        <!-- <record id="ng_church_attendance_line_report" model="ir.actions.report">
+            <field name="name">ng_church.attendance_line_report</field>
+            <field name="model">ng_church.attendance_wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ng_church.church_attendance_report</field>
+            <field name="report_file">ng_church.church_attendance_report</field>
+            <field name="binding_model_id" ref="model_ng_church_attendance_wizard"/>
+            <field name="binding_type">report</field>
+        </record>
+ -->
+        <!-- <record id="action_report_appointment" model="ir.actions.report">
+            <field name="name">Appointment Details</field>
+            <field name="model">appointment.report.wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <! This should be a file instead of template id -->
+        <!--     <field name="report_name">om_hospital.report_appointment_details</field>
+            <field name="report_file">om_hospital.report_appointment_details</field>
+            <field name="binding_model_id" ref="model_appointment_report_wizard"/>
+            <field name="binding_type">report</field>
+        </record>  -->
+
+<!--         <record id="ng_church_tithe_line_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+
+        <report id="ng_church_tithe_line_report"
+                model="ng_church.tithe"
+                string="Tithes Report"
+                name="ng_church.church_tithe_report"
+                file="ng_church.church_tithe_report"
+                report_type="qweb-pdf"/> 
+
+        <record id="ng_church_offering_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+
+        <report id="ng_church_offering_report"
+                model="ng_church.offering"
+                string="Offering Report"
+                name="ng_church.church_offering_report"
+                file="ng_church.church_offering_report"
+                report_type="qweb-pdf"/>
+
+        <record id="ng_church_donation_report" model="ir.actions.report">
+            <field name="paperformat_id" ref="ng_church.paperformat_tithe_report"/>
+        </record>
+
+        <report id="ng_church_donation_report"
+                model="ng_church.donation"
+                string="Donation Report"
+                name="ng_church.church_donation_report"
+                file="ng_church.church_donation_report"
+                report_type="qweb-pdf" /> -->
+        
+        <!-- Link to attendace action, the last line after the return  -->
+        <record id="ng_church_attendance_line_report" model="ir.actions.report">
+            <field name="name">ng_church.attendance_line_report</field>
+            <!-- the model we need to get the data from -->
+            <field name="model">ng_church.attendance_wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- This link to the template_id and the template is inside church_attendance_report.xml -->
+            <field name="report_name">ng_church.church_attendance_report</field>
+            <field name="report_file">ng_church.church_attendance_report</field>
+            <!-- Add new report to the model same as above but put a model_ as prefix -->
+            <field name="binding_model_id" ref="model_ng_church_attendance_wizard"/>
+            <field name="binding_type">report</field>
+        </record>
+        
+        <!-- Link to donation action, the last line after the return  -->
+        <record id="ng_church.church_donation_report" model="ir.actions.report">
+            <!-- This line is arbitary -->
+            <field name="name">ng_church.donation_report</field>
+            <!-- the model indicate, we will receive the print fromm the wizard -->
+            <field name="model">ng_church.donation_wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- This link to the template_id and the template is inside church_donat_report.xml -->
+            <field name="report_name">ng_church.church_donation_report_template</field>
+            <field name="report_file">ng_church.church_donation_report_template</field>
+            <!-- Add new report to the model same as above but put a model_ as prefix -->
+            <field name="binding_model_id" ref="model_ng_church_donation_wizard"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="ng_church.church_offering_report" model="ir.actions.report">
+            <!-- This line is arbitary -->
+            <field name="name">ng_church.offering_report</field>
+            <!-- the model indicate, we will receive the print fromm the wizard -->
+            <field name="model">ng_church.offering_wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- This link to the template_id and the template is inside church_donat_report.xml -->
+            <field name="report_name">ng_church.church_offering_report_template</field>
+            <field name="report_file">ng_church.church_offering_report_template</field>
+            <!-- Add new report to the model same as above but put a model_ as prefix -->
+            <field name="binding_model_id" ref="model_ng_church_offering_wizard"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="ng_church.church_pledges_report" model="ir.actions.report">
+            <!-- This line is arbitary -->
+            <field name="name">ng_church.church_pledges_report</field>
+            <!-- the model indicate, we will receive the print fromm the wizard -->
+            <field name="model">ng_church.pledge_wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- This link to the template_id and the template is inside church_donat_report.xml -->
+            <field name="report_name">ng_church.church_pledges_report_template</field>
+            <field name="report_file">ng_church.church_pledges_report_template</field>
+            <!-- Add new report to the model same as above but put a model_ as prefix -->
+            <field name="binding_model_id" ref="model_ng_church_pledge_wizard"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="ng_church.church_tithe_report" model="ir.actions.report">
+            <!-- This line is arbitary -->
+            <field name="name">ng_church.church_tithe_report</field>
+            <!-- the model indicate, we will receive the print fromm the wizard -->
+            <field name="model">ng_church.tithe_wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- This link to the template_id and the template is inside church_donat_report.xml -->
+            <field name="report_name">ng_church.church_tithe_report_template</field>
+            <field name="report_file">ng_church.church_tithe_report_template</field>
+            <!-- Add new report to the model same as above but put a model_ as prefix -->
+            <field name="binding_model_id" ref="model_ng_church_tithe_wizard"/>
+            <field name="binding_type">report</field>
+        </record>
+        <!-- added by max -->
+        <record id="ng_church.church_tithe_voucher" model="ir.actions.report">
+            <!-- This line is arbitary -->
+            <field name="name">ng_church.church_tithe_voucher</field>
+            <!-- the model indicate, we will receive the print instruction from the model -->
+            <field name="model">ng_church.tithe</field>
+            <field name="report_type">qweb-pdf</field>
+            <!-- This link to the template_id and the template is inside church_tithe_voucher.xml -->
+            <field name="report_name">ng_church.tithe_voucher_template</field>
+            <field name="report_file">ng_church.tithe_voucher_template</field>
+            <!-- Add new report to the model same as above but put a model_ as prefix -->
+            <field name="binding_model_id" ref="model_ng_church_tithe"/>
+            <field name="binding_type">report</field>
+        </record>
+</odoo>

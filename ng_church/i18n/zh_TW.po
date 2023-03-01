@@ -1,0 +1,2209 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ng_church
+#
+msgid ""
+msgstr "教會管理"
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-15 00:51+0000\n"
+"PO-Revision-Date: 2022-12-15 00:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ng_church
+#: model:mail.template,body_html:ng_church.ng_church_pledge_payment_email_template
+msgid ""
+"\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: #000000; background-color: #ffffff; \">\n"
+"                    <h3>Dear ${object.pledger.name},</h3>\n"
+"                    <p> &nbsp; &nbsp; &nbsp; &nbsp; Thank you for your continued support to the development of Church.\n"
+"                        Please note that the total amount due from your ${object.pledge_id.name.name} pledge to the church is: <b>${object.balance}</b>\n"
+"                    </p>\n"
+"                    <p >Thank you and God bless!</p>\n"
+"                </div>\n"
+"                <div style=\"text-align:right;\">\n"
+"                    <p><em>Yours Faithfully</em></p>\n"
+"                    <p>${user.company_id.name}</p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: #000000; background-color: #ffffff; \">\n"
+"                    <h3>Dear ${object.pledger.name},</h3>\n"
+"                    <p> &nbsp; &nbsp; &nbsp; &nbsp; 謝謝您持續對教會發展的支持，\n"
+"                        溫馨的提醒：您認捐的 ${object.pledge_id.name.name} 已經到期，您尚待認捐的余額還有: <b>${object.balance}</b>\n"
+"                    </p>\n"
+"                    <p >謝謝您！</p>\n"
+"                </div>\n"
+"                <div style=\"text-align:right;\">\n"
+"                    <p><em>願神祝福您!</em></p>\n"
+"                    <p>${user.company_id.name}</p>\n"
+"                </div>\n"
+"            "
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__status__s
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__status__s
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__status__s
+msgid " Self Employed"
+msgstr "自僱人士"
+
+#. module: ng_church
+#: model:mail.template,subject:ng_church.ng_church_pledge_payment_email_template
+msgid "${object.pledge_id.name.name|safe}"
+msgstr "認捐"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.print_pledge_report
+msgid "<em>Yours Faithfully</em>"
+msgstr "您忠誠的"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+msgid "<span>Amount</span>"
+msgstr "金額"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+msgid "<span>Category</span>"
+msgstr "群體"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+msgid "<span>Name</span>"
+msgstr "姓名"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pledges_report_template
+msgid "<span>Pledger</span>"
+msgstr "認捐人"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "<span>Total</span>"
+msgstr "總計"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pledges_report_template
+msgid "<span>amount paid</span>"
+msgstr "支付的金額"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+msgid "<span>amount</span>"
+msgstr "金額"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pledges_report_template
+msgid "<span>balance</span>"
+msgstr "結餘"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "<span>children</span>"
+msgstr "兒童"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_report_template
+msgid "<span>donor</span>"
+msgstr "捐贈者"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "<span>female</span>"
+msgstr "女性"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "<span>guest</span>"
+msgstr "來賓"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "<span>male</span>"
+msgstr "男性"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+msgid "<span>name</span>"
+msgstr "姓名"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pledges_report_template
+msgid "<span>pledge amount</span>"
+msgstr "認捐金額"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+msgid "<span>section</span>"
+msgstr "部門"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__end_meridiem__am
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__start_meridiem__am
+msgid "AM"
+msgstr "早上"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_company__donation_account
+#: model:ir.model.fields,field_description:ng_church.field_res_company__offering_account
+#: model:ir.model.fields,field_description:ng_church.field_res_company__pledge_account
+#: model:ir.model.fields,field_description:ng_church.field_res_company__tithe_account
+#: model:ir.model.fields,field_description:ng_church.field_res_company__transit_account
+msgid "Account"
+msgstr "帳戶"
+
+#. module: ng_church
+#: model:res.groups,name:ng_church.accountant
+msgid "Accountant"
+msgstr "會計師"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Accounting"
+msgstr "會計"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pledge_line__state__active
+msgid "Active"
+msgstr "激活狀態"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__next_activity_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__next_activity_id
+msgid "Activity"
+msgstr "活動"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__kanban_state
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__kanban_state
+msgid "Activity State"
+msgstr "活動狀態"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_form
+msgid "Add home address..."
+msgstr "添加家庭住址..."
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_form
+msgid "Add internal notes..."
+msgstr "添加內部註釋.."
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_form
+msgid "Add office address..."
+msgstr "添加辦公地址..."
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__address
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__home_address
+msgid "Address"
+msgstr "地址"
+
+#. module: ng_church
+#: model:res.groups,name:ng_church.church_administrator
+msgid "Administrator"
+msgstr "管理員"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__end_age
+msgid "Age End"
+msgstr "最高年齡"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__start_age
+msgid "Age Start"
+msgstr "最低年齡"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_wizard__tithe__all
+msgid "All"
+msgstr "全部"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__amount
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__amount
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__amount
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__amount
+msgid "Amount"
+msgstr "金額"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__assistant_pastor_in_charge_of_parish
+msgid "Assistant Pastor in Charge of Parish"
+msgstr "負責牧區的助理牧師"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__assistant_pastors_in_charge_of_province
+msgid "Assistant Pastors in Charge of Province"
+msgstr "省分管助理牧師"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__attendance_id
+#: model:ir.ui.menu,name:ng_church.ng_church_attendance_report
+#: model:ir.ui.menu,name:ng_church.ng_church_service_attendance
+msgid "Attendance"
+msgstr "出席"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_view
+msgid "Attendance Record"
+msgstr "出席記錄"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_attendance_report_action
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "Attendance Report"
+msgstr "出席報告"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__balance
+msgid "Balance"
+msgstr "結餘"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Bio-Data"
+msgstr "個人訊息"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__born_again_date
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__born_again_date
+#: model:ir.model.fields,field_description:ng_church.field_res_users__born_again_date
+msgid "Born Again Date"
+msgstr "重生日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__is_born_again
+#: model:ir.model.fields,field_description:ng_church.field_res_users__is_born_again
+msgid "Born Again?"
+msgstr "重生?"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__is_born_again
+msgid "Born again"
+msgstr "重生?"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_donation_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_follow_up_activity_log
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_offering_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_pledge_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_tithe_wizard
+msgid "Cancel"
+msgstr "取消"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__tithe_type
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__tithe
+msgid "Category"
+msgstr "群體"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__children
+msgid "Children"
+msgstr "兒童"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_followup_first_timer_form_view
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_followup_member_stage_form_view
+msgid "Choose a date..."
+msgstr "選擇一個日期..."
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_church_action
+#: model:ir.model.fields,field_description:ng_church.field_account_bank_statement_line__church_id
+#: model:ir.model.fields,field_description:ng_church.field_account_move__church_id
+#: model:ir.model.fields,field_description:ng_church.field_account_payment__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__church_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__church_id
+#: model:ir.ui.menu,name:ng_church.ng_church_church_menu
+msgid "Church"
+msgstr "教會"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_service_attendance_action
+msgid "Church Attendance"
+msgstr "教會出席情況"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_collection_main_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_collection_report
+msgid "Church Collections"
+msgstr "教會資助"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_donation_action
+msgid "Church Donation"
+msgstr "教會捐贈"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_event_config_main_menu
+msgid "Church Events"
+msgstr "教會活動"
+
+#. module: ng_church
+#: model_terms:ir.actions.act_window,help:ng_church.ng_church_first_timer_followup_action
+msgid "Church First timer follow up"
+msgstr "教會初訪者跟進"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_funds_menu
+msgid "Church Funds"
+msgstr "教會資金"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.ng_church_growth_main_menu
+msgid "Church Growth"
+msgstr "教會成長"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_church_guarantor
+msgid "Church Guarantor"
+msgstr "教會擔保人"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_church_lodgement_action
+#: model:ir.ui.menu,name:ng_church.ng_church_church_logement_menu
+#: model_terms:ir.actions.act_window,help:ng_church.ng_church_church_lodgement_action
+msgid "Church Lodgement"
+msgstr "寄託金"
+
+#. module: ng_church
+#: model:ir.module.category,name:ng_church.ng_church_access_rule_category
+#: model:ir.ui.menu,name:ng_church.church_main_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_church_main_menu
+msgid "Church Management"
+msgstr "教會管理"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_company__member_ids
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__is_church_member
+#: model:ir.model.fields,field_description:ng_church.field_res_users__is_church_member
+msgid "Church Member"
+msgstr "教會成員"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_membership_menu
+msgid "Church Members"
+msgstr "教會人員構成"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Church Membership"
+msgstr "教會會籍"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__name
+#: model:ir.model.fields,field_description:ng_church.field_res_company__name
+msgid "Church Name"
+msgstr "教會名稱"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_church_nextofkin
+msgid "Church Nextofkin"
+msgstr "教會近親屬"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_offering_action
+msgid "Church Offering"
+msgstr "教會奉獻"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_pastor
+msgid "Church Pastor"
+msgstr "教會牧師"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.church_pleadge_action
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_form
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_search
+msgid "Church Pledge"
+msgstr "教會認捐"
+
+#. module: ng_church
+#: model:mail.template,name:ng_church.ng_church_pledge_payment_email_template
+msgid "Church Pledge  Payment- Send by Email"
+msgstr "教會認捐支付-電子郵件寄送"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_line_form
+msgid "Church Pledge lines"
+msgstr "教會認捐明細"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_pledge_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_tithe_wizard
+msgid "Church Pledges"
+msgstr "教會認捐"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_church_refs
+msgid "Church Refs"
+msgstr "教會參考訊息"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__section_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__section_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__section_id
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__church_section_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__church_section_id
+msgid "Church Section"
+msgstr "教會部門"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.church_sections_action
+#: model:ir.model,name:ng_church.model_church_sections
+#: model:ir.ui.menu,name:ng_church.church_sections_menu
+msgid "Church Sections"
+msgstr "教會各部門"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__service_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__service_id
+msgid "Church Service"
+msgstr "教會服務"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_service_type_action
+#: model:ir.model.fields,field_description:ng_church.field_res_company__program_ids
+msgid "Church Services"
+msgstr "教會各項服務"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_structure_menu
+msgid "Church Structure"
+msgstr "教會組成"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_company__rml_header1
+msgid "Church Tagline "
+msgstr "教會標籤明細"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_tithe_action
+#: model:ir.model.fields,field_description:ng_church.field_res_company__tithe_ids
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_tithe_form_view
+msgid "Church Tithes"
+msgstr "教會十一奉獻"
+
+#. module: ng_church
+#: model_terms:ir.actions.act_window,help:ng_church.ng_church_member_followup_action
+msgid "Church members follow up"
+msgstr "教會成員跟進"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__church_id
+msgid "Church's Tithe"
+msgstr "教會十一奉獻"
+
+#. module: ng_church
+#: model_terms:ir.actions.act_window,help:ng_church.ng_church_pastor_action
+msgid "Click to add Minister."
+msgstr "點擊添加傳道人."
+
+#. module: ng_church
+#: model_terms:ir.actions.act_window,help:ng_church.ng_church_church_action
+msgid "Click to add a parish."
+msgstr "點擊添加牧區."
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__code
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__code
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__code
+msgid "Code"
+msgstr "代碼"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__name
+msgid "Collection"
+msgstr "資助"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__name
+msgid "Collection Source"
+msgstr "資助來源"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__color
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__color
+msgid "Color Index"
+msgstr "顏色索引"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_config_menu
+msgid "Configuration"
+msgstr "管理設置"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_res_partner
+msgid "Contact"
+msgstr "聯絡人"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__create_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__create_uid
+msgid "Created by"
+msgstr "創建者"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__create_date
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__create_date
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__create_date
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__create_date
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__create_date
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__create_date
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__create_date
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__create_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__create_date
+msgid "Created on"
+msgstr "創建時間"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_report_template
+msgid "DONATION REPORT"
+msgstr "捐贈報告"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__name
+msgid "Date"
+msgstr "日期"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+msgid "Date From"
+msgstr "開始日期"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+msgid "Date To"
+msgstr "截止日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__date_from
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__date_from
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__date_from
+msgid "Date from"
+msgstr "開始日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__date_of_birth
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__dob
+#: model:ir.model.fields,field_description:ng_church.field_res_users__dob
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Date of Birth"
+msgstr "生日"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__date_to
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__date_to
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__date_to
+msgid "Date to"
+msgstr "結束日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__days
+msgid "Day"
+msgstr "日期"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.print_pledge_report
+msgid "Dear"
+msgstr "親愛的"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__state__declined
+msgid "Declined"
+msgstr "拒絕"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__display_name
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__display_name
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__display_name
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__display_name
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__display_name
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__display_name
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__display_name
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__display_name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__display_name
+msgid "Display Name"
+msgstr "姓名顯示"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__marital__divorced
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__marital__divorced
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__marital__divorced
+#: model:ir.model.fields.selection,name:ng_church.selection__fellowship__marital_status__divorced
+msgid "Divorced"
+msgstr "離婚"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__amount
+msgid "Donated Amount"
+msgstr "捐贈金額"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_donation_report_action
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__donation_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__donation
+#: model:ir.ui.menu,name:ng_church.church_donation_report_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_donation_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_form
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_line_form
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_tree
+msgid "Donation"
+msgstr "捐贈"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__donation_line_ids
+msgid "Donation Line"
+msgstr "捐贈明細"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Donations"
+msgstr "捐贈"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__donor_id
+msgid "Donor"
+msgstr "捐贈人"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_lodgement__state__draft
+msgid "Draft"
+msgstr "草稿"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__email
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__email
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__email
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__email
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__email
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__email
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__personal_email
+msgid "Email"
+msgstr "電子郵箱"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__status__e
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__status__e
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__status__e
+msgid "Employed"
+msgstr "僱用"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__emp_id
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__emp_id
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__emp_id
+msgid "Employee"
+msgstr "僱員"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__employer
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__employer
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__employer
+msgid "Employer"
+msgstr "僱主"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__date_to
+msgid "End Date"
+msgstr "截止日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__end_meridiem
+msgid "End Meridiem"
+msgstr "結束時間"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__end
+msgid "End Time"
+msgstr "結束時間"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.training_sub_menu
+msgid "Events"
+msgstr "舉行活動"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.training_registration_menu
+msgid "Events Registration"
+msgstr "各活動報名統計"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.training_type_config_menu
+msgid "Events Types"
+msgstr "活動性質"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Faith Level"
+msgstr "信心層級"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.fellowship_action
+msgid "FellowShip"
+msgstr "團契"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_fellowship
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__fellowship_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__fellowship_id
+msgid "Fellowship"
+msgstr "團契"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.fellowship_menu
+msgid "Fellowships"
+msgstr "各團契"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__female
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__gender__female
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__gender__female
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__gender__female
+#: model:ir.model.fields.selection,name:ng_church.selection__fellowship__gender__female
+msgid "Female"
+msgstr "女性"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__name
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__name
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__name
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "First Name"
+msgstr "姓"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.church_action_membership_first_timer
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__name
+msgid "First Timer"
+msgstr "初訪者"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_membership_first_timer_sub_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_first_timer_followup_menu
+msgid "First Timers"
+msgstr "初訪者"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__fold
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__fold
+msgid "Folded in Pipeline"
+msgstr "折疊在進程線中"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_first_timer_followup_action
+#: model:ir.actions.act_window,name:ng_church.ng_church_member_followup_action
+#: model:ir.ui.menu,name:ng_church.ng_church_followup_menu
+msgid "Follow Up"
+msgstr "跟進"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_follow_up_log_action
+msgid "Follow Up Activity"
+msgstr "跟進活動"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_followup_first_timer_form_view
+msgid "Followup"
+msgstr "跟進"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__friday
+msgid "Friday"
+msgstr "週五"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pledge_line__state__fulfilled
+msgid "Fulfilled"
+msgstr "滿足條件"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__name
+msgid "Full Name"
+msgstr "全名"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__gender
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__gender
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__gender
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__gender
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_search
+msgid "Gender"
+msgstr "性別"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_donation_line_form
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_line_form
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_offering_lines_form_view
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_tithe_line_form_view
+msgid "Generate Voucher"
+msgstr "生成憑證"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_search
+msgid "Group By..."
+msgstr "分組依據..."
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_tree
+msgid "Guarantor"
+msgstr "擔保人"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.action_gua
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__gua_ids
+#: model:ir.model.fields,field_description:ng_church.field_res_users__gua_ids
+#: model:ir.ui.menu,name:ng_church.church_gua_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Guarantors"
+msgstr "擔保人"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__guest
+msgid "Guest"
+msgstr "來賓"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__priority__2
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__priority__2
+msgid "High"
+msgstr "高"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__home
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__home
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__home
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Home Address"
+msgstr "家庭地址"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__id
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__id
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__id
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__id
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__id
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__id
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__id
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__is_invoiced
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__is_invoiced
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__is_invoiced
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__is_invoiced
+msgid "Invoiced"
+msgstr "發票已開"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__is_preacher
+#: model:ir.model.fields,field_description:ng_church.field_res_users__is_preacher
+msgid "Is Preacher Member?"
+msgstr "是講員嗎？"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__joined_date
+#: model:ir.model.fields,field_description:ng_church.field_res_users__joined_date
+msgid "Joined Date"
+msgstr "加入時間"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__journal_id
+#: model:ir.model.fields,field_description:ng_church.field_res_company__donation_journal
+#: model:ir.model.fields,field_description:ng_church.field_res_company__offering_journal
+#: model:ir.model.fields,field_description:ng_church.field_res_company__pledge_journal
+#: model:ir.model.fields,field_description:ng_church.field_res_company__tithe_journal
+msgid "Journal"
+msgstr "日記賬"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_account_move
+msgid "Journal Entry"
+msgstr "日記帳分錄"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor____last_update
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin____last_update
+#: model:ir.model.fields,field_description:ng_church.field_church_refs____last_update
+#: model:ir.model.fields,field_description:ng_church.field_church_sections____last_update
+#: model:ir.model.fields,field_description:ng_church.field_fellowship____last_update
+#: model:ir.model.fields,field_description:ng_church.field_membership_category____last_update
+#: model:ir.model.fields,field_description:ng_church.field_membership_status____last_update
+#: model:ir.model.fields,field_description:ng_church.field_membership_type____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines____last_update
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard____last_update
+msgid "Last Modified on"
+msgstr "上次修改時間"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__lname
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__lname
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__lname
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__lastname
+msgid "Last Name"
+msgstr "名"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__write_uid
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__write_uid
+msgid "Last Updated by"
+msgstr "最近更新者"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__write_date
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__write_date
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__write_date
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__write_date
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__write_date
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__write_date
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__write_date
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_wizard__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__write_date
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_wizard__write_date
+msgid "Last Updated on"
+msgstr "最近更新時間"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Last name"
+msgstr "姓"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__lead_pastor
+msgid "Lead Pastor"
+msgstr "帶領牧師"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__lead_pastor_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__lead_pastor_id
+msgid "Leader Pastor"
+msgstr "主任牧師"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_follow_up_activity_log
+msgid "Log & Schedule Next"
+msgstr "記錄並安排下一步"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_follow_up_activity_log
+msgid "Log Only"
+msgstr "只記錄"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__priority__1
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__priority__1
+msgid "Low"
+msgstr "低"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__male
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__gender__male
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__gender__male
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__gender__male
+#: model:ir.model.fields.selection,name:ng_church.selection__fellowship__gender__male
+msgid "Male"
+msgstr "男性"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_search
+msgid "Marital"
+msgstr "婚姻"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__marital
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__marital
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__marital
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__marital_status
+msgid "Marital Status"
+msgstr "婚姻狀態"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__marital__married
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__marital__married
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__marital__married
+#: model:ir.model.fields.selection,name:ng_church.selection__fellowship__marital_status__married
+msgid "Married"
+msgstr "已婚"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__name
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_search
+msgid "Member"
+msgstr "成員"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__member_uniq_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__member_uniq_id
+msgid "Member ID"
+msgstr "成員 ID"
+
+#. module: ng_church
+#: model:ir.model.constraint,message:ng_church.constraint_res_partner_member_id_uniq
+msgid "Member ID must be unique!"
+msgstr "成員 ID必須是唯一"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.action_ref
+msgid "Member References"
+msgstr "成員參考訊息"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.church_action_membership_members
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_lines__tithe_type__members
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_wizard__tithe__members
+#: model:ir.ui.menu,name:ng_church.church_membership_sub_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_member_timer_followup_menu
+msgid "Members"
+msgstr "成員"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__membership_category_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__membership_category_id
+msgid "Members Category"
+msgstr "成員類別"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.church_members_contact_menu
+msgid "Members Contacts"
+msgstr "成員通訊"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.membership_config_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Membership"
+msgstr "成員會籍"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.membership_category_action
+#: model:ir.model,name:ng_church.model_membership_category
+#: model:ir.ui.menu,name:ng_church.membership_category_menu
+msgid "Membership Category"
+msgstr "會籍類別"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.membership_status_action
+#: model:ir.model,name:ng_church.model_membership_status
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__membership_status_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__membership_status_id
+#: model:ir.ui.menu,name:ng_church.membership_status_menu
+msgid "Membership Status"
+msgstr "會籍狀態"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.membership_type_action
+#: model:ir.model,name:ng_church.model_membership_type
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__membership_type_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__membership_type_id
+#: model:ir.ui.menu,name:ng_church.membership_type_menu
+msgid "Membership Type"
+msgstr "會籍類型"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__minister_hierarchy__minister
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__type_of_minister__minister
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_lines__tithe_type__minister
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_wizard__tithe__minister
+msgid "Minister"
+msgstr "傳道人"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__pastor_id
+msgid "Minister's Name"
+msgstr "傳道人姓名"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__is_pastor_tithe
+msgid "Minister's Tithe"
+msgstr "傳道人十一奉獻"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_pastor_action
+#: model:ir.ui.menu,name:ng_church.ng_church_pastor_menu
+msgid "Ministers"
+msgstr "傳道人"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__monday
+msgid "Monday"
+msgstr "週一"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_attendance
+msgid "NG Church Attendance"
+msgstr "教會出席情況"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_attendance_line
+msgid "NG Church Attendance Line"
+msgstr "教會出席明細"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_attendance_wizard
+msgid "NG Church Attendance Wizard"
+msgstr "教會出席頁面"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_collection
+msgid "NG Church Collection"
+msgstr "教會資助"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_donation
+msgid "NG Church Donation"
+msgstr "教會捐贈"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_donation_line
+msgid "NG Church Donation Line"
+msgstr "教會捐贈明細"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_donation_wizard
+msgid "NG Church Donation Wizard"
+msgstr "教會捐贈頁面"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_followup_first_timer
+msgid "NG Church Followup First Timer"
+msgstr "教會初訪者跟進"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_followup_log
+msgid "NG Church Followup Log"
+msgstr "教會跟進記錄"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_followup_member
+msgid "NG Church Followup Member"
+msgstr "教會成員跟進"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_lodgement
+msgid "NG Church Lodgement"
+msgstr "教會寄託金"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_offering
+msgid "NG Church Offering"
+msgstr "教會奉獻"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_offering_line
+msgid "NG Church Offering Line"
+msgstr "教會奉獻明細"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_offering_wizard
+msgid "NG Church Offering Wizard"
+msgstr "教會奉獻頁面"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_pledge
+msgid "NG Church Pledge"
+msgstr "教會認捐"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_pledge_line
+msgid "NG Church Pledge Line"
+msgstr "教會認捐"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_pledge_line_payment
+msgid "NG Church Pledge Line Payment"
+msgstr "教會認捐支付明細"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_pledge_wizard
+msgid "NG Church Pledge Wizard"
+msgstr "教會認捐頁面"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_program
+msgid "NG Church Program"
+msgstr "教會活動安排"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_tithe
+msgid "NG Church Tithe"
+msgstr "教會十一奉獻"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_tithe_lines
+msgid "NG Church Tithe Lines"
+msgstr "教會十一奉獻明細"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_tithe_wizard
+msgid "NG Church Tithe Wizard"
+msgstr "教會十一奉獻頁面"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_fellowship__name
+#: model:ir.model.fields,field_description:ng_church.field_membership_category__name
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__name
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_collection__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation_line__notes
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__tither
+msgid "Name"
+msgstr "日期:"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__activity_id
+msgid "Next Activity"
+msgstr "下一次活動"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__date_action
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__date_action
+msgid "Next Activity Date"
+msgstr "下一次活動日期"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__kanban_state__green
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__kanban_state__green
+msgid "Next activity is planned"
+msgstr "已計劃的下一次活動"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__kanban_state__red
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__kanban_state__red
+msgid "Next activity late"
+msgstr "下一個活動晚了"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__kin_ids
+#: model:ir.model.fields,field_description:ng_church.field_res_users__kin_ids
+#: model:ir.ui.menu,name:ng_church.church_kin_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Next of Kin"
+msgstr "近親"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.action_kin
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_tree
+msgid "Next of kins"
+msgstr "近親屬"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_associate
+msgid "Ng Church Associate"
+msgstr "教會夥伴"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__kanban_state__grey
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__kanban_state__grey
+msgid "No next activity planned"
+msgstr "無下一次活動計劃"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__priority__0
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__priority__0
+msgid "Normal"
+msgstr "正常"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__state__not_verify
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__state__not_verify
+msgid "Not Verified"
+msgstr "尚未確認"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__notes
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__note
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__description
+msgid "Note"
+msgstr "註記"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__notes
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__notes
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__notes
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__notes
+#: model:ir.model.fields,field_description:ng_church.field_membership_status__notes
+#: model:ir.model.fields,field_description:ng_church.field_membership_type__notes
+msgid "Notes"
+msgstr "註記明細"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_offering_report_action
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering__offering_line_ids
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__offering_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_wizard__offering
+#: model:ir.ui.menu,name:ng_church.church_offering_report_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_offering_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_offering_form_view
+msgid "Offering"
+msgstr "奉獻"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_offering_report_template
+msgid "Offering REPORT"
+msgstr "奉獻报告"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Offerings"
+msgstr "奉獻"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_offering_line__offeror_id
+msgid "Offeror"
+msgstr "奉獻人"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__office
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__office
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__office
+msgid "Office Address"
+msgstr "辦公室地址"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Other Information"
+msgstr "其他訊息"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__end_meridiem__pm
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__start_meridiem__pm
+msgid "PM"
+msgstr "下午"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__paid
+msgid "Paid"
+msgstr "已支付"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__parish_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__parish_id
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__parish_id
+#: model:ir.model.fields,field_description:ng_church.field_res_users__parish_id
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_search_view
+msgid "Parish"
+msgstr "牧區"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_account_move__partner_id
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_search_view
+msgid "Partner"
+msgstr "合作夥伴"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_sections__pastor_id
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__type_of_minister__pastor
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_lines__tithe_type__pastor
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_tithe_wizard__tithe__pastor
+#: model:res.groups,name:ng_church.parish_pastor
+msgid "Pastor"
+msgstr "牧師"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Pastor Information"
+msgstr "牧師訊息"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_company__pastor_id
+msgid "Pastor(s) in Charge"
+msgstr "主管牧師"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__is_pastor
+#: model:ir.model.fields,field_description:ng_church.field_res_users__is_pastor
+msgid "Pastor/Minister"
+msgstr "牧師/傳道人"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__pastors_in_charge_of_area
+msgid "Pastors in Charge of Area"
+msgstr "地區分管牧師"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__pastors_in_charge_of_parish
+msgid "Pastors in Charge of Parish"
+msgstr "牧區分管牧師"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__pastors_in_charge_of_province
+msgid "Pastors in Charge of Province"
+msgstr "省分管牧師"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__pastors_in_charge_of_region
+msgid "Pastors in Charge of Region"
+msgstr "地區分管牧師"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_pastor__pastor_hierarchy__pastors_in_charge_of_zone
+msgid "Pastors in Charge of Zone"
+msgstr "時區分管牧師"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Personal email"
+msgstr "電子郵箱"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Personal phone"
+msgstr "手機號碼"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_associate__phone
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__phone
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__phone
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__personal_phone
+msgid "Phone"
+msgstr "電話"
+
+#. module: ng_church
+#: code:addons/ng_church/models/membership.py:0
+#, python-format
+msgid "Please enter a valid email address"
+msgstr "請輸入正確郵箱地址"
+
+#. module: ng_church
+#: code:addons/ng_church/models/membership.py:0
+#: code:addons/ng_church/models/membership.py:0
+#, python-format
+msgid "Please enter valid email address"
+msgstr "請輸入正確郵箱地址"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_pledge_report_action
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__pledge_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_wizard__pledge
+#: model:ir.ui.menu,name:ng_church.church_pledge_report_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pledges_report_template
+msgid "Pledge"
+msgstr "認捐"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.pledge_report_reg
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_line_form
+msgid "Pledge Balance"
+msgstr "認捐結餘"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line_payment__pledge_line_id
+msgid "Pledge Line"
+msgstr "認捐明細"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__pledge_line_payment_ids
+msgid "Pledge Payment"
+msgstr "認捐支付"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pledges_report_template
+msgid "Pledge Payment REPORT"
+msgstr "認捐支付报告"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.ng_church_pledges_report
+msgid "Pledge Payments Report"
+msgstr "認捐支付报告"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__amount
+msgid "Pledged Amount"
+msgstr "認捐金額"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__date
+msgid "Pledged Date"
+msgstr "認捐日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__pledger
+msgid "Pledger"
+msgstr "認捐人"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__pledge_line_ids
+#: model:ir.ui.menu,name:ng_church.ng_church_pledges_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_form
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Pledges"
+msgstr "認捐"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__minister_hierarchy
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__pastor_hierarchy
+msgid "Position"
+msgstr "職位"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_lodgement_form
+msgid "Post Lodgement"
+msgstr "寄託金公告"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_lodgement__state__posted
+msgid "Posted"
+msgstr "公告"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_donation_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_offering_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_pledge_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_tithe_wizard
+msgid "Print"
+msgstr "打印"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__priority
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__priority
+msgid "Priority"
+msgstr "優先等級"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__attendance_line_ids
+msgid "Program Attendance"
+msgstr "出席活動"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_project_project
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge__name
+msgid "Project"
+msgstr "專項計劃"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__ref_ids
+#: model:ir.model.fields,field_description:ng_church.field_res_users__ref_ids
+#: model:ir.ui.menu,name:ng_church.church_ref_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_form
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_tree
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "References"
+msgstr "參考人"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__rel
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__rel
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__rel
+msgid "Relationship with Employee"
+msgstr "與僱員關係"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_report_ng_church_church_attendance_report
+msgid "Report NG Church Church Attendance Report"
+msgstr "教會出席報告"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_report_ng_church_church_donation_report
+msgid "Report NG Church Church Donation Report"
+msgstr "教會捐贈報告"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_report_ng_church_church_offering_report
+msgid "Report NG Church Church Offering Report"
+msgstr "教會奉獻报告"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_report_ng_church_church_pledges_report
+msgid "Report NG Church Church Pledges Report"
+msgstr "教會認捐报告"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_report_ng_church_church_tithe_report
+msgid "Report NG Church Tithe"
+msgstr "教會十一奉獻報告"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.ng_church_reporting_menu
+msgid "Reporting"
+msgstr "打印報告"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_form
+msgid "Reset to Not Verify"
+msgstr "重置到未確認狀態"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_partner_membership_form
+msgid "Role"
+msgstr "角色"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__saturday
+msgid "Saturday"
+msgstr "週六"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_pleadge_line_form
+msgid "Send By Email"
+msgstr "電子郵件寄送"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__sequence
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__sequence
+msgid "Sequence"
+msgstr "序列"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__attendance
+#: model_terms:ir.ui.view,arch_db:ng_church.church_attendance_report
+msgid "Service"
+msgstr "服務"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_program_form
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_program_tree
+msgid "Service Type"
+msgstr "服務類型"
+
+#. module: ng_church
+#: model:ir.ui.menu,name:ng_church.ng_church_service_type_menu
+msgid "Services"
+msgstr "各項服務"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__marital__single
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__marital__single
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__marital__single
+#: model:ir.model.fields.selection,name:ng_church.selection__fellowship__marital_status__single
+msgid "Single"
+msgstr "單身"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__is_spirit_filled
+msgid "Spirit Filled"
+msgstr "聖靈充滿"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__spirit_filled_date
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__spirit_filled_date
+#: model:ir.model.fields,field_description:ng_church.field_res_users__spirit_filled_date
+msgid "Spirit Filled Date"
+msgstr "聖靈充滿日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_res_partner__is_spirit_filled
+#: model:ir.model.fields,field_description:ng_church.field_res_users__is_spirit_filled
+msgid "Spirit Filled?"
+msgstr "聖靈充滿？"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "Spiritual Data"
+msgstr "靈命數據"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_first_timer__stage_id
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_member__stage_id
+msgid "Stage"
+msgstr "階段"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_first_timer_stage__name
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_member_stage__name
+msgid "Stage Name"
+msgstr "階段名稱"
+
+#. module: ng_church
+#: model:ir.model,name:ng_church.model_ng_church_first_timer_stage
+#: model:ir.model,name:ng_church.model_ng_church_member_stage
+msgid "Stage of case"
+msgstr "對象的階段"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_wizard__date_from
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_donation__start_date
+msgid "Start Date"
+msgstr "起始日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__start_meridiem
+msgid "Start Meridiem"
+msgstr "開始子午線"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_program__start
+msgid "Start Time"
+msgstr "起始時間"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_project_project__x_date
+msgid "Start date"
+msgstr "起始日期"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_lodgement__state
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pledge_line__state
+msgid "State"
+msgstr "狀態"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__state
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__status
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__state
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_guarantor_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_nextofkin_search
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_search
+msgid "Status"
+msgstr "狀態"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_followup_log__summary
+msgid "Summary"
+msgstr "總結"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__sunday
+msgid "Sunday"
+msgstr "週日"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+msgid "TITHES REPORT"
+msgstr "十一奉獻報告"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__tel1
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__tel1
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__tel1
+msgid "Telephone Number 1"
+msgstr "電話號碼1"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__tel2
+#: model:ir.model.fields,field_description:ng_church.field_church_nextofkin__tel2
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__tel2
+msgid "Telephone Number 2"
+msgstr "電話號碼2"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.print_pledge_report
+msgid "Thank you and God bless!"
+msgstr "願神祝福你，謝謝！"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.print_pledge_report
+msgid ""
+"Thank you for your continued support to the development of the church of God.\n"
+"                                    Please note that the total amount due from your"
+msgstr "感謝您長期的支持教會成長，提醒支付額已到期"
+
+#. module: ng_church
+#: model:ir.model.fields,help:ng_church.field_ng_church_first_timer_stage__fold
+#: model:ir.model.fields,help:ng_church.field_ng_church_member_stage__fold
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
+msgstr "沒有階段可以顯示"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__thursday
+msgid "Thursday"
+msgstr "週四"
+
+#. module: ng_church
+#: model:ir.actions.act_window,name:ng_church.ng_church_tithe_report_action
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe_lines__tithe_id
+msgid "Tithe"
+msgstr "十一奉獻"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_tithe__tithe_line_ids
+#: model:ir.ui.menu,name:ng_church.church_tithe_report_menu
+#: model:ir.ui.menu,name:ng_church.ng_church_tithes_menu
+#: model_terms:ir.ui.view,arch_db:ng_church.church_tithe_report_template
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Tithes"
+msgstr "十一奉獻"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_attendance_line__total
+msgid "Total"
+msgstr "總計"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.inherited_res_company_view_form
+msgid "Transit Account"
+msgstr "過渡賬戶"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__tuesday
+msgid "Tuesday"
+msgstr "週二"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__type_of_minister
+msgid "Type Of Minister"
+msgstr "聖工類型"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__status__u
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__status__u
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__status__u
+msgid "Unemployed"
+msgstr "無僱用"
+
+#. module: ng_church
+#: model:ir.model.fields,help:ng_church.field_ng_church_first_timer_stage__sequence
+#: model:ir.model.fields,help:ng_church.field_ng_church_member_stage__sequence
+msgid "Used to order stages. Lower is better."
+msgstr "用於調整階段，越低越好"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_ng_church_pastor__users_id
+msgid "User's Name"
+msgstr "使用者姓名"
+
+#. module: ng_church
+#: model:res.groups,name:ng_church.head_usher
+msgid "Usher"
+msgstr "接待員"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__state__verify
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__state__verify
+msgid "Verified"
+msgstr "確認"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__user
+msgid "Verified By"
+msgstr "確認者"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.view_church_refs_form
+msgid "Verify"
+msgstr "確認"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_first_timer__priority__3
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_followup_member__priority__3
+msgid "Very High"
+msgstr "非常高"
+
+#. module: ng_church
+#: code:addons/ng_church/models/membership.py:0
+#: code:addons/ng_church/models/membership.py:0
+#: code:addons/ng_church/models/membership.py:0
+#, python-format
+msgid "Warning"
+msgstr "警告"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__ng_church_program__days__wednesday
+msgid "Wednesday"
+msgstr "週三"
+
+#. module: ng_church
+#: model:ir.model.fields.selection,name:ng_church.selection__church_guarantor__marital__widower
+#: model:ir.model.fields.selection,name:ng_church.selection__church_nextofkin__marital__widower
+#: model:ir.model.fields.selection,name:ng_church.selection__church_refs__marital__widower
+#: model:ir.model.fields.selection,name:ng_church.selection__fellowship__marital_status__widower
+msgid "Widower"
+msgstr "寡婦"
+
+#. module: ng_church
+#: model:ir.model.fields,field_description:ng_church.field_church_guarantor__status
+#: model:ir.model.fields,field_description:ng_church.field_church_refs__status
+msgid "Work Status"
+msgstr "工作狀態"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.ng_church_attendance_line_report
+msgid "ng_church.attendance_line_report"
+msgstr "教會出席明細報告"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.church_pledges_report
+msgid "ng_church.church_pledges_report"
+msgstr "教會認捐報告"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.church_tithe_report
+msgid "ng_church.church_tithe_report"
+msgstr "教會十一奉獻報告"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.church_donation_report
+msgid "ng_church.donation_report"
+msgstr "捐贈報告"
+
+#. module: ng_church
+#: model:ir.actions.report,name:ng_church.church_offering_report
+msgid "ng_church.offering_report"
+msgstr "教會奉獻報告"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_attendance_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_donation_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_offering_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_pledge_wizard
+#: model_terms:ir.ui.view,arch_db:ng_church.ng_church_tithe_wizard
+msgid "or"
+msgstr "或"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.minister_profile_view
+msgid "pastor form"
+msgstr "牧師表格"
+
+#. module: ng_church
+#: model_terms:ir.ui.view,arch_db:ng_church.print_pledge_report
+msgid "pledge to the church of God is:"
+msgstr "對上帝教會的認捐是:"

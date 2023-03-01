@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="payment_receipt_inherit" inherit_id="account.report_payment_receipt_document">
+            <xpath expr="//table" position="replace">
+                
+            </xpath>
+        </template>
+    </data>
+</odoo>

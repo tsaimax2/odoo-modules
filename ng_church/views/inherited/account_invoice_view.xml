@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="account_invoice_view_church">
+            <!-- indicate the form is dedicate to the church module, it is originally for general accounting -->
+            <field name="name">inherited accoount.invoice.church</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="before">
+                    <field name="church_id" readonly="1"/>
+                </xpath>                
+            </field>
+        </record>
+
+        <!-- The following is only create a duplicate Journal Items, doesn't make sense -->
+        <!-- I have no idea why we need to replace original Journal Itmes -->
+        <!-- <record model="ir.ui.view" id="account_account_line_view_church">
+            <field name="name">account_account_line_view_church</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@id='aml_tab']" position="replace">
+                    <page string="Journal Items">
+                        <field name="line_ids" widget="one2many_list" context="{'line_ids': line_ids, 'journal_id': journal_id }">
+                            <tree editable="bottom" string="Journal Items">
+                                <field name="account_id" domain="[('company_id', '=', parent.company_id), ('deprecated', '=', False), ('user_type_id', '=', 3)]"/>
+                                <field name="partner_id" domain="['|', ('parent_id', '=', False), ('is_company', '=', True)]"/>
+                                <field name="name"/> -->
+                                <!-- <field name="analytic_account_id" groups="analytic.group_analytic_accounting"/> -->
+                                <!-- The following remedation does not work -->
+                                <!-- <field name="analytic_account_id" domain="['|',('company_id', '=', company_id), ('company_id', '=', False)]"/>  -->
+                            <!-- <field name="amount_currency" groups="base.group_multi_currency"/>
+                                <field name="company_currency_id" invisible="1"/>
+                                <field name="currency_id" options="{'no_create': True}" groups="base.group_multi_currency"/>
+                                <field name="debit" sum="Total Debit"/>
+                                <field name="credit" sum="Total Credit"/>
+                                <field name="date_maturity" required="0"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record> -->
+
+    </data>
+</odoo>

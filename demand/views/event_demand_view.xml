@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+    <record id="view_demand_creator_form_inherit" model="ir.ui.view">
+        <field name="name">event.event.inherit</field>
+        <field name="model">event.event</field>
+        <field name="priority">999</field>
+        <field name="inherit_id" ref="event.view_event_form"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='tag_ids']" position="after">
+              <field name="service_id" />
+            <!-- <attribute name="required">True</attribute> -->
+          </xpath>
+        </field>   
+    </record>
+    
+    <record id="action_demand_creator" model="ir.actions.act_window">
+        <field name="name">Activity Create</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">event.event</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first activity!
+            </p>
+        </field> -->
+    </record>
+
+
+  </data>
+</odoo>

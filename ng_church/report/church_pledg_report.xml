@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- This is the page layout of the report, link inside the reports.xml (report & file portion) -->
+    <template id="church_pledges_report_template">
+        <t t-call="web.html_container">
+            <!-- doc is the object to give the whole contain of the record -->
+            <!-- <t t-foreach="docs" t-as="o"> -->
+            <!-- get the logo on the top and footer at the bottom -->
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <!-- <div class="row"> -->
+                            <div class = "text-center">
+                                <h2>Pledge Payment REPORT</h2>
+                            </div>
+                            <div class="col-xs-8">
+                                <br>
+                                <table>
+                                    <tr>
+                                        <td>Pledge</td>
+                                        <td>:</td>
+                                        <td>
+                                           <!-- patient_id is a many2one field, need index! 0 or 1 --> 
+                                            <t t-if="form_data.get('pledge')">
+                                                <t t-esc="form_data['pledge'][1]"/>
+                                            </t>                                        
+                                        </td>
+                                    </tr>    
+                                    <!-- <tr>    
+                                        <td>Date From</td>
+                                        <td>:</td>
+                                        <td>
+                                            <t t-if="form_data.get('date_from')">
+                                                <t t-esc="form_data['date_from']"/>
+                                            </t>                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date To</td>
+                                        <td>:</td>
+                                        <td>
+                                            <t t-if="form_data.get('date_to')">
+                                                <t t-esc="form_data['date_to']"/>
+                                            </t>                                        
+                                        </td>
+                                    </tr> -->
+                                </table>
+                                </br>
+                                <table class="table table-boardered mt32">
+                                    <thead>
+                                        <tr>                                            
+                                            <th name="th_Pledger" class="text-left">
+                                                <span>Pledger</span>
+                                            </th>
+                                             <th name="th_pledge_amount" class="text-left">
+                                                <span>pledge amount</span>
+                                            </th>
+                                             <th name="th_amount_paid" class="text-left">
+                                                <span>amount paid</span>
+                                            </th>                                            
+                                            <th name="th_balance" class="text-left">
+                                                <span>balance</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <t t-foreach="pledges" t-as="line">
+                                        <tr>
+                                            <td>
+                                                <span t-esc="line['pledger'][1]"/>
+                                            </td>
+                                            <td>
+                                                <span t-esc="line['amount']"/>
+                                            </td>
+                                            <td>
+                                                <span t-esc="line['paid']"/>
+                                            </td>
+                                            <td>
+                                                <span t-esc="line['balance']"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </table>
+                            <!-- </div> -->
+                        </div>
+                
+                    </div>
+                </t>
+            <!-- </t> -->
+        </t>
+    </template>
+
+</odoo>
